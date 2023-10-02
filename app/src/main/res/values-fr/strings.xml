@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Veilleuse</string>
+
+    <string name="bear">Ourse</string>
+    <string name="penguin">Manchote</string>
+    <string name="pig">Porcine</string>
+    <string name="rebbit">Rebbit</string>
+    <string name="kitty">Minou</string>
+    <string name="moon">Lune</string>
+    <string name="sheep">Agneau</string>
+    <string name="bunny">Lapine</string>
+    <string name="butterfly">Papillon</string>
+    <string name="panda">Panda</string>
+    <string name="lion">Lion</string>
+    <string name="frog">Crapaud</string>
+    <string name="mouse">Souris</string>
+    <string name="cactus">Cactus</string>
+    <string name="hipopotam">Hippopotame</string>
+    <string name="squirrel">Écureuil</string>
+    <string name="elephant">Éléphant</string>
+    <string name="snail">Escargot</string>
+    <string name="fox">Renarde</string>
+    <string name="giraffe">Girafe</string>
+    <string name="owl">Chouette</string>
+    <string name="chiken">Poussin</string>
+    <string name="monkey">Singe</string>
+
+    <string name="star_anim_off">Animation darrière-plan désactivée</string>
+    <string name="star_off">Arrière-plan désactivé</string>
+    <string name="star_on">Contexte sur</string>
+
+    <string name="melody">Lullaby on - jouera 1 fois</string>
+    <string name="melody_loop">Lullaby on - joue constamment</string>
+    <string name="melody_off">Berceuse désactivée</string>
+
+    <string name="bgcolor_green">Couleur de fond - vert</string>
+    <string name="bgcolor_purple">Couleur de fond - violet</string>
+    <string name="bgcolor_orange">Couleur de fond - orange</string>
+    <string name="bgcolor_c">Couleur de fond - bleu</string>
+    <string name="bgcolor_durk">Couleur de fond - foncé</string>
+    <string name="bgcolor_blue">Couleur de fond - bleu</string>
+
+    <string name="auto_change">Changement automatique des veilleuses - activé</string>
+    <string name="auto_change_off">Changement automatique des veilleuses - éteint</string>
+
+    <string name="close">Écran verrouillé</string>
+    <string name="open">Écran déverrouillé</string>
+
+    <string name="minutes">Minutes</string>
+    <string name="hours">Heures</string>
+    <string name="colon">:</string>
+    <string name="timer">Minuteur</string>
+    <string name="set">Ensemble</string>
+
+    <string name="ads_title">Paramètres de publicité</string>
+    <string name="ads_settings">Désactiver les publicités</string>
+    <string name="ads_text">Après le visionnage, les annonces seront désactivées deux sessions</string>
+    <string name="ads_counter">Sans publicité</string>
+
+    <string name="bright">Luminosité</string>
+
+    <string name="bright_is">La luminosité de la veilleuse est: \u0020 </string>
+    <string name="screan_bright_is">La luminosité de lécran est: \u0020  </string>
+    <string name="dont_load">Lannonce na pas été chargée</string>
+
+
+</resources>

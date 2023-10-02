@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <FrameLayout
+        android:id="@+id/backgrounds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/fon1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_dark_blue"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/fon2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/stars_dark_blue"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/fon3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lg_dark_blue"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1237459888817948/7966100486"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        ads:layout_constraintBottom_toTopOf="@+id/indicator"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/flow">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/automate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/an_bear"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:alpha="0.25"
+        ads:constraint_referenced_ids="stars_button,timerButton,lullaby_button,bgcolor,sunButton,autoButton"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/adView" />
+
+    <ImageView
+        android:id="@+id/stars_button"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:alpha="0.25"
+        android:src="@drawable/bt_stars" />
+
+    <ImageView
+        android:id="@+id/timerButton"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:alpha="0.25"
+        android:src="@drawable/bt_cl0" />
+
+    <ImageView
+        android:id="@+id/lullaby_button"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:alpha="0.25"
+        android:src="@drawable/bt_nota" />
+
+    <ImageView
+        android:id="@+id/bgcolor"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:alpha="0.25"
+        android:src="@drawable/bt_chcolor" />
+
+    <ImageView
+        android:id="@+id/sunButton"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:alpha="0.25"
+        android:src="@drawable/bt_sun4" />
+
+    <ImageView
+        android:id="@+id/autoButton"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:alpha="0.25"
+        android:src="@drawable/bt_automatic" />
+
+    <FrameLayout
+        android:id="@+id/lockScrean"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clickable="false"
+        ads:layout_constraintBottom_toBottomOf="@+id/backgrounds"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        ads:layout_constraintBottom_toBottomOf="@+id/container"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/ads"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.25"
+            android:src="@drawable/bt_ads"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:textAlignment="gravity"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/lockButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="false"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.25"
+            android:src="@drawable/bt_unlock" />
+
+    </LinearLayout>
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/indicator"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        ads:layout_constraintBottom_toBottomOf="@+id/backgrounds"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

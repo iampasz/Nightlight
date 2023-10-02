@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Ночничок</string>
+
+    <string name="bear">Мишка</string>
+    <string name="penguin">Пингвин</string>
+    <string name="pig">Свинка</string>
+    <string name="rebbit">Кролик</string>
+    <string name="kitty">Котенок</string>
+    <string name="moon">Месяц</string>
+    <string name="sheep">Овечка</string>
+    <string name="bunny">Зайчик</string>
+    <string name="butterfly">Бабочка</string>
+    <string name="panda">Панда</string>
+    <string name="lion">Лев</string>
+    <string name="frog">Жаба</string>
+    <string name="mouse">Мышка</string>
+    <string name="cactus">Кактус</string>
+    <string name="hipopotam">Бегемотик</string>
+    <string name="squirrel">Белка</string>
+    <string name="elephant">Слоник</string>
+    <string name="snail">Улитка</string>
+    <string name="fox">Лисичка</string>
+    <string name="giraffe">Жираф</string>
+    <string name="owl">Сова</string>
+    <string name="chiken">Ципленок</string>
+    <string name="monkey">Мартышка</string>
+
+
+    <string name="star_anim_off">Анимация фона отключена</string>
+    <string name="star_off">Фон отключен</string>
+    <string name="star_on">Фон включен</string>
+
+    <string name="melody">Мелодия проиграет 1 раз</string>
+    <string name="melody_loop">Мелодия будет играть постоянно</string>
+    <string name="melody_off">Мелодия отключена</string>
+
+    <string name="bgcolor_green">Цвет фона зеленый</string>
+    <string name="bgcolor_purple">Цвет фона фиолетовый</string>
+    <string name="bgcolor_orange">Цвет фона оранжевый</string>
+    <string name="bgcolor_c">Цвет фона синий</string>
+    <string name="bgcolor_durk">Цвет фона серый</string>
+    <string name="bgcolor_blue">Цвет фона синий</string>
+
+    <string name="auto_change">Автоматическая смена ночников включена</string>
+    <string name="auto_change_off">Автоматическая смена ночников отключена</string>
+
+    <string name="close">Екран заблокирован</string>
+    <string name="open">Екран разблокирован</string>
+
+    <string name="minutes">Минуты</string>
+    <string name="hours">Часы</string>
+    <string name="colon">:</string>
+    <string name="timer">Таймер</string>
+    <string name="set">Установить</string>
+
+    <string name="ads_title">Настройки рекламы</string>
+    <string name="ads_settings">Отключить рекламу</string>
+    <string name="ads_text">После просмотра, реклама будет отключена 2 сесии</string>
+    <string name="ads_counter">Без рекламы: \u0020</string>
+
+    <string name="bright">Яркость</string>
+
+    <string name="bright_is">Яркость ночника: \u0020 </string>
+    <string name="screan_bright_is">Яркость екрана: \u0020  </string>
+
+    <string name="dont_load">Реклама не загрузилась</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Nachtlicht</string>
+
+    <string name="bear">Tragen</string>
+    <string name="penguin">Pinguin</string>
+    <string name="pig">Schweinchen</string>
+    <string name="rebbit">Rebbit</string>
+    <string name="kitty">Kitty</string>
+    <string name="moon">Mond</string>
+    <string name="sheep">Lamm</string>
+    <string name="bunny">Kaninchen</string>
+    <string name="butterfly">Schmetterling</string>
+    <string name="panda">Panda</string>
+    <string name="lion">Löwin</string>
+    <string name="frog">Kröte</string>
+    <string name="mouse">Maus</string>
+    <string name="cactus">Kaktus</string>
+    <string name="hipopotam">Nilpferd</string>
+    <string name="squirrel">Eichhörnchen</string>
+    <string name="elephant">Elefant</string>
+    <string name="snail">Schnecke</string>
+    <string name="fox">Fuchs</string>
+    <string name="giraffe">Giraffe</string>
+    <string name="owl">Eule</string>
+    <string name="chiken">Küken</string>
+    <string name="monkey">Affe</string>
+
+    <string name="star_anim_off">Hintergrundanimation deaktiviert</string>
+    <string name="star_off">Hintergrund deaktiviert</string>
+    <string name="star_on">Hintergrund auf</string>
+
+    <string name="melody">Wiegenlied an – wird einmal abgespielt</string>
+    <string name="melody_loop">Wiegenlied an – spielt ständig</string>
+    <string name="melody_off">Wiegenlied deaktiviert</string>
+
+    <string name="bgcolor_green">Hintergrundfarbe - Grün</string>
+    <string name="bgcolor_purple">Hintergrundfarbe - Lila</string>
+    <string name="bgcolor_orange">Hintergrundfarbe - Orange</string>
+    <string name="bgcolor_c">Hintergrundfarbe - Blau</string>
+    <string name="bgcolor_durk">Hintergrundfarbe - dunkel</string>
+    <string name="bgcolor_blue">Hintergrundfarbe - Blau</string>
+
+    <string name="auto_change">Automatischer Nachtlichtwechsel – inklusive</string>
+    <string name="auto_change_off">Automatischer Wechsel der Nachtlichter – deaktiviert</string>
+
+    <string name="close">Bildschirm gesperrt</string>
+    <string name="open">Bildschirm entsperrt</string>
+
+    <string name="minutes">Minuten</string>
+    <string name="hours">Std</string>
+    <string name="colon">:</string>
+    <string name="timer">Timer</string>
+    <string name="set">Satz</string>
+
+    <string name="ads_title">Werbeeinstellungen</string>
+    <string name="ads_settings">Werbungen ausschalten</string>
+    <string name="ads_text">Nach der Anzeige werden die Anzeigen für zwei Sitzungen deaktiviert</string>
+    <string name="ads_counter">Ohne Werbung</string>
+
+    <string name="bright">Helligkeit</string>
+
+    <string name="bright_is">Die Helligkeit des Nachtlichts beträgt: \u0020 </string>
+    <string name="screan_bright_is">Bildschirmhelligkeit ist: \u0020  </string>
+    <string name="dont_load">Anzeige wurde nicht geladen</string>
+
+
+</resources>

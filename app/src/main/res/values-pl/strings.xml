@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Nocne światło</string>
+
+    <string name="bear">Niedźwiedź</string>
+    <string name="penguin">Pingwin</string>
+    <string name="pig">Świnka</string>
+    <string name="rebbit">Królik</string>
+    <string name="kitty">Koteczek</string>
+    <string name="moon">Księżyc</string>
+    <string name="sheep">Jagnięcina</string>
+    <string name="bunny">Królik</string>
+    <string name="butterfly">Motyl</string>
+    <string name="panda">Panda</string>
+    <string name="lion">Lew</string>
+    <string name="frog">Ropucha</string>
+    <string name="mouse">Mysz</string>
+    <string name="cactus">Kaktus</string>
+    <string name="hipopotam">Hipopotam</string>
+    <string name="squirrel">Wiewiórka</string>
+    <string name="elephant">Słoń</string>
+    <string name="snail">Ślimak</string>
+    <string name="fox">Lis</string>
+    <string name="giraffe">Żyrafa</string>
+    <string name="owl">Sowa</string>
+    <string name="chiken">Pisklę</string>
+    <string name="monkey">Małpa</string>
+
+    <string name="star_anim_off">Animacja w tle wyłączona</string>
+    <string name="star_off">Tło wyłączone</string>
+    <string name="star_on">Tło włączone</string>
+
+    <string name="melody">Kołysanka włączona - zagra 1 raz</string>
+    <string name="melody_loop">Kołysanka włączona - gra ciągle</string>
+    <string name="melody_off">Kołysanka wyłączona</string>
+
+    <string name="bgcolor_green">Kolor tła - zielony</string>
+    <string name="bgcolor_purple">Kolor tła - fioletowy</string>
+    <string name="bgcolor_orange">Kolor tła - pomarańczowy</string>
+    <string name="bgcolor_c">Kolor tła - niebieski</string>
+    <string name="bgcolor_durk">Kolor tła - ciemny</string>
+    <string name="bgcolor_blue">Kolor tła - niebieski</string>
+
+    <string name="auto_change">Automatyczna zmiana lampek nocnych - wł</string>
+    <string name="auto_change_off">Automatyczna zmiana lampek nocnych - wyłączona</string>
+
+    <string name="close">Ekran zablokowany</string>
+    <string name="open">Ekran odblokowany</string>
+
+    <string name="minutes">Minuty</string>
+    <string name="hours">Godziny</string>
+    <string name="colon">:</string>
+    <string name="timer">Regulator czasowy</string>
+    <string name="set">Ustawić</string>
+
+    <string name="ads_title">Ustawienia reklamy</string>
+    <string name="ads_settings">Wyłącz reklamy</string>
+    <string name="ads_text">Po obejrzeniu reklamy zostaną wyłączone na dwie sesje</string>
+    <string name="ads_counter">Bez reklamy</string>
+
+    <string name="bright">Jasność</string>
+
+    <string name="bright_is">Jasność światła nocnego jest: \u0020 </string>
+    <string name="screan_bright_is">Jasność ekranu jest: \u0020  </string>
+    <string name="dont_load">Reklama się nie załadowała</string>
+
+
+</resources>

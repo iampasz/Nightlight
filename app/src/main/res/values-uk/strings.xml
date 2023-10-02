@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Нічник</string>
+
+    <string name="bear">Ведмежа</string>
+    <string name="penguin">Пінгвін</string>
+    <string name="pig">Свинка</string>
+    <string name="rebbit">Зайчик</string>
+    <string name="kitty">Кошеня</string>
+    <string name="moon">Місяць</string>
+    <string name="sheep">Вівця</string>
+    <string name="bunny">Кролик</string>
+    <string name="butterfly">Метелик</string>
+    <string name="panda">Панда</string>
+    <string name="lion">Лев</string>
+    <string name="frog">Жабка</string>
+    <string name="mouse">Мишеня</string>
+    <string name="cactus">Кактус</string>
+    <string name="hipopotam">Бегемотик</string>
+    <string name="squirrel">Білочка</string>
+    <string name="elephant">Слоник</string>
+    <string name="snail">Слимак</string>
+    <string name="fox">Лисичка</string>
+    <string name="giraffe">Жираф</string>
+    <string name="owl">Сова</string>
+    <string name="chiken">Курча</string>
+    <string name="monkey">Мавпа</string>
+
+
+    <string name="star_anim_off">Анімація заднього фону вимкнена</string>
+    <string name="star_off">Фон відключено</string>
+    <string name="star_on">Фон включено</string>
+
+    <string name="melody">Колискова включена - програє 1 раз</string>
+    <string name="melody_loop">Колискова включена - гратиме постійно</string>
+    <string name="melody_off">Колискова відключена</string>
+
+    <string name="bgcolor_green">Колір фону - зелений</string>
+    <string name="bgcolor_purple">Колір фону - фіолетовий</string>
+    <string name="bgcolor_orange">Колір фону - оранжевий</string>
+    <string name="bgcolor_c">Колір фону - голубий</string>
+    <string name="bgcolor_durk">Колір фону - сірий</string>
+    <string name="bgcolor_blue">Колір фону - синій</string>
+
+    <string name="auto_change">Автоматична зміна ніників - включена</string>
+    <string name="auto_change_off">Автоматична зміна ніників - вимкнена</string>
+
+    <string name="close">Екран заблоковано</string>
+    <string name="open">Екран розблоковано</string>
+
+    <string name="minutes">Хвилини</string>
+    <string name="hours">Години</string>
+    <string name="colon">:</string>
+    <string name="timer">Таймер</string>
+    <string name="set">Встановити</string>
+
+    <string name="ads_title">Налаштунки реклами</string>
+    <string name="ads_settings">Відключити рекламу</string>
+    <string name="ads_text">Після перегляду рекламу, реклама в додатку буде відключена 2 сесії</string>
+    <string name="ads_counter">Без реклами: \u0020</string>
+
+    <string name="bright">Яскравість</string>
+
+    <string name="bright_is">Яскравість нічнику: \u0020 </string>
+    <string name="screan_bright_is">Яскравість екрану: \u0020 </string>
+
+    <string name="dont_load">Реклама не завантажилась</string>
+
+</resources>

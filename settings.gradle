@@ -1,0 +1,53 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+
+
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        maven {
+            url 'https://imobile.github.io/adnw-sdk-android'
+        }
+
+        maven {
+            url 'https://imobile-maio.github.io/maven'
+        }
+
+        maven {
+            url 'https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea'
+        }
+
+        maven {
+            url 'https://artifact.bytedance.com/repository/pangle/'
+        }
+
+        maven {
+            url 'https://sdk.tapjoy.com/'
+        }
+        maven {
+            url 'https://artifactory.yahooinc.com/artifactory/maven/'
+        }
+
+        maven { url = "https://cboost.jfrog.io/artifactory/chartboost-ads/" } // Chartboost
+
+        maven {
+            name "Chartboost Mediation’s maven repo"
+            url "https://cboost.jfrog.io/artifactory/chartboost-mediation"
+        }
+
+        maven {
+            url 'https://android-sdk.is.com/'
+        }
+    }
+}
+rootProject.name = "Nightlight"
+include ':app'
+

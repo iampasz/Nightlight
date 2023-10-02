@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Nightlight</string>
+
+    <string name="bear">Bear</string>
+    <string name="penguin">Penguin</string>
+    <string name="pig">Piggy</string>
+    <string name="rebbit">Rebbit</string>
+    <string name="kitty">Kitty</string>
+    <string name="moon">Moon</string>
+    <string name="sheep">Lamb</string>
+    <string name="bunny">Rabbit</string>
+    <string name="butterfly">Butterfly</string>
+    <string name="panda">Panda</string>
+    <string name="lion">Lion</string>
+    <string name="frog">Toad</string>
+    <string name="mouse">Mouse</string>
+    <string name="cactus">Cactus</string>
+    <string name="hipopotam">Hippo</string>
+    <string name="squirrel">Squirrel</string>
+    <string name="elephant">Elephant</string>
+    <string name="snail">Snail</string>
+    <string name="fox">Fox</string>
+    <string name="giraffe">Giraffe</string>
+    <string name="owl">Owl</string>
+    <string name="chiken">Chick</string>
+    <string name="monkey">Monkey</string>
+
+    <string name="star_anim_off">Background animation disabled</string>
+    <string name="star_off">Background disabled</string>
+    <string name="star_on">Background on</string>
+
+    <string name="melody">Lullaby on - will play 1 time</string>
+    <string name="melody_loop">Lullaby on - plays constantly</string>
+    <string name="melody_off">Lullaby disabled</string>
+
+    <string name="bgcolor_green">Background color - green</string>
+    <string name="bgcolor_purple">Background color - purple</string>
+    <string name="bgcolor_orange">Background color - orange</string>
+    <string name="bgcolor_c">Background color - blue</string>
+    <string name="bgcolor_durk">Background color - dark</string>
+    <string name="bgcolor_blue">Background color - blue</string>
+
+    <string name="auto_change">Automatic change of nightlights - on</string>
+    <string name="auto_change_off">Automatic change of nightlights - off</string>
+
+    <string name="close">Screen locked</string>
+    <string name="open">Screen unlocked</string>
+
+    <string name="minutes">Minutes</string>
+    <string name="hours">Hours</string>
+    <string name="colon">:</string>
+    <string name="timer">Timer</string>
+    <string name="set">Set</string>
+
+    <string name="ads_title">Advertising settings</string>
+    <string name="ads_settings">Disable ads</string>
+    <string name="ads_text">After viewing, ads will be disabled two sessions</string>
+    <string name="ads_counter">Without advertising</string>
+
+    <string name="bright">Brightness</string>
+
+    <string name="bright_is">Nightlight brightness is: \u0020 </string>
+    <string name="screan_bright_is">Screen brightness is: \u0020  </string>
+    <string name="dont_load">Ad did not load</string>
+
+
+</resources>

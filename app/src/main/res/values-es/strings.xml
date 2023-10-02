@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Luz de noche</string>
+
+    <string name="bear">Osa</string>
+    <string name="penguin">Pingüino</string>
+    <string name="pig">Cerdita</string>
+    <string name="rebbit">Conejo</string>
+    <string name="kitty">Gatita</string>
+    <string name="moon">Luna</string>
+    <string name="sheep">Cordera</string>
+    <string name="bunny">Coneja</string>
+    <string name="butterfly">Mariposa</string>
+    <string name="panda">Panda</string>
+    <string name="lion">León</string>
+    <string name="frog">Sapo</string>
+    <string name="mouse">Ratón</string>
+    <string name="cactus">Cactus</string>
+    <string name="hipopotam">Hipopótamo</string>
+    <string name="squirrel">Ardilla</string>
+    <string name="elephant">Elefante</string>
+    <string name="snail">Caracol</string>
+    <string name="fox">Zorro</string>
+    <string name="giraffe">Jirafa</string>
+    <string name="owl">Búho</string>
+    <string name="chiken">Polluela</string>
+    <string name="monkey">Mona</string>
+
+    <string name="star_anim_off">Animación de fondo deshabilitada</string>
+    <string name="star_off">Fondo deshabilitado</string>
+    <string name="star_on">Fondo en</string>
+
+    <string name="melody">Canción de cuna activada: se reproducirá 1 vez</string>
+    <string name="melody_loop">Lullaby on - suena constantemente</string>
+    <string name="melody_off">Canción de cuna deshabilitada</string>
+
+    <string name="bgcolor_green">Color de fondo - verde</string>
+    <string name="bgcolor_purple">Color de fondo - violeta</string>
+    <string name="bgcolor_orange">Color de fondo - naranja</string>
+    <string name="bgcolor_c">Color de fondo - azul</string>
+    <string name="bgcolor_durk">Color de fondo - oscuro</string>
+    <string name="bgcolor_blue">Color de fondo - azul</string>
+
+    <string name="auto_change">Cambio automático de luces nocturnas - incluido</string>
+    <string name="auto_change_off">Cambio automático de luces nocturnas - desactivado</string>
+
+    <string name="close">Pantalla bloqueada</string>
+    <string name="open">Pantalla desbloqueada</string>
+
+    <string name="minutes">Minutos</string>
+    <string name="hours">Horas</string>
+    <string name="colon">:</string>
+    <string name="timer">Temporizador</string>
+    <string name="set">Colocar</string>
+
+    <string name="ads_title">Configuraciones de publicidad</string>
+    <string name="ads_settings">Desactivar los anuncios</string>
+    <string name="ads_text">Después de verlos, los anuncios se desactivarán dos sesiones</string>
+    <string name="ads_counter">Sin publicidad</string>
+
+    <string name="bright">Brillo</string>
+
+    <string name="bright_is">El brillo de la luz nocturna es: \u0020 </string>
+    <string name="screan_bright_is">El brillo de la pantalla es: \u0020  </string>
+    <string name="dont_load">El anuncio no se cargó</string>
+
+
+</resources>
