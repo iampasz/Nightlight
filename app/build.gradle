@@ -2,11 +2,10 @@ plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
     id 'com.google.firebase.crashlytics'
-
 }
 
 android {
-    namespace 'com.sarnavsky.pasz.nightlight'
+
     compileSdk 34
 
     defaultConfig {
@@ -41,6 +40,8 @@ android {
     }
 
 
+    namespace 'com.sarnavsky.pasz.nightlight'
+
 }
 
 dependencies {
@@ -59,35 +60,39 @@ dependencies {
     implementation 'com.google.android.ump:user-messaging-platform:2.1.0'
 
     //Firebase
-    implementation 'com.google.firebase:firebase-analytics-ktx:21.5.0'
-    implementation 'com.google.firebase:firebase-crashlytics:18.6.0'
-    implementation 'com.google.firebase:firebase-analytics:21.5.0'
+//    implementation 'com.google.firebase:firebase-analytics-ktx:21.5.0'
+//    implementation 'com.google.firebase:firebase-crashlytics:18.6.0'
+//    implementation 'com.google.firebase:firebase-analytics:21.5.0'
 
     //ADS mediation
-    implementation  'com.google.ads.mediation:adcolony:4.8.0.2'
-    implementation  'com.google.ads.mediation:fyber:8.2.4.0'
-    implementation  'com.google.ads.mediation:imobile:2.3.1.1'
-    implementation  'com.google.ads.mediation:inmobi:10.6.2.0'
-    implementation  'com.google.ads.mediation:vungle:7.1.0.0'
-    implementation  'com.google.ads.mediation:facebook:6.16.0.0'
-    implementation  'com.google.ads.mediation:mintegral:16.5.51.0'
-    implementation  'com.google.ads.mediation:mytarget:5.19.0.0'
-    implementation  'com.google.ads.mediation:pangle:5.5.0.9.0'
-    implementation  'com.google.ads.mediation:tapjoy:13.2.1.0'
-    implementation 'com.chartboost:chartboost-mediation-sdk:4.3.0'
+//    implementation 'com.google.ads.mediation:adcolony:4.8.0.2'
+//    implementation 'com.google.ads.mediation:fyber:8.2.4.0'
+//    implementation 'com.google.ads.mediation:imobile:2.3.1.1'
+//    implementation 'com.google.ads.mediation:inmobi:10.6.2.0'
+//    implementation 'com.google.ads.mediation:vungle:7.1.0.0'
+//    implementation 'com.google.ads.mediation:facebook:6.16.0.0'
+//    implementation 'com.google.ads.mediation:mintegral:16.5.51.0'
+//    implementation 'com.google.ads.mediation:mytarget:5.19.0.0'
+//    implementation 'com.google.ads.mediation:pangle:5.5.0.9.0'
+//    implementation 'com.google.ads.mediation:tapjoy:13.2.1.0'
+//    implementation 'com.chartboost:chartboost-mediation-sdk:4.3.0'
+//    implementation "org.greenrobot:eventbus:3.3.1"
 
     //Kotlin
-    implementation "org.greenrobot:eventbus:3.3.1"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.0"
-    implementation "org.jetbrains.kotlin:kotlin-reflect:1.8.21"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"
-    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1"
+
+    // implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.0"
+    //implementation "org.jetbrains.kotlin:kotlin-reflect:1.8.21"
+    //implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"
+   // implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1"
 
     //Bottom ask rate in GooglePlayMarket
-    implementation 'fr.nicolaspomepuy:discreetapprate:2.0.4@aar'
+   // implementation 'fr.nicolaspomepuy:discreetapprate:2.0.4@aar'
 
     //Binding
     implementation "androidx.databinding:databinding-runtime:8.2.0"
-    implementation 'com.android.tools.build:gradle:3.6.0-rc01'
+   // implementation 'com.android.tools.build:gradle:3.6.0-rc01'
+
+
+//    implementation 'javax.activation:javax.activation:1.2.0'
 
 }

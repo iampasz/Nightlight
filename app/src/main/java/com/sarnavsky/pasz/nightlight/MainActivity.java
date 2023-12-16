@@ -2,8 +2,6 @@ package com.sarnavsky.pasz.nightlight;
 
 import static android.R.anim.linear_interpolator;
 
-
-
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -36,7 +34,6 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.gms.ads.AdError;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.LoadAdError;
 import com.google.android.gms.ads.MobileAds;
@@ -67,6 +64,7 @@ import me.relex.circleindicator.CircleIndicator3;
 public class MainActivity extends AppCompatActivity implements Brights.MyInterface {
 
 
+    MainBinding binding;
 
     int current_item = 2;
     boolean timerStatus = false;
@@ -88,18 +86,13 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
     CountDownTimer globalTimer;
     CountDownTimer cdt;
 
-    public AdView mAdView;
 
     int addCounter;
     int currentNlBright;
-
     AdRequest adRequest;
     private InterstitialAd mInterstitialAd;
     private RewardedAd rewardedAd;
-
     private ConsentInformation consentInformation;
-
-    MainBinding binding;
 
     ConsentForm consentForm;
 
@@ -112,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-
+        binding = MainBinding.inflate(getLayoutInflater());
 
         startGlobalTimer();
         saveNoAdsCount(-1);
@@ -120,10 +113,10 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
         adRequest = new AdRequest.Builder().build();
 
         if (addCounter > 0) {
-            mAdView.setVisibility(View.GONE);
+            binding.adsView.setVisibility(View.GONE);
 
         } else {
-            mAdView.loadAd(adRequest);
+            binding.adsView.loadAd(adRequest);
         }
 
         loadRewardedAd();
@@ -146,7 +139,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
 
         });
 
-        mAdView.setAdListener(new AdListener() {
+        binding.adsView.setAdListener(new AdListener() {
             @Override
             public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                 super.onAdFailedToLoad(loadAdError);
@@ -162,7 +155,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
             @Override
             public void onAdLoaded() {
                 super.onAdLoaded();
-                Log.i("MyApp", Objects.requireNonNull(Objects.requireNonNull(mAdView.getResponseInfo()).getMediationAdapterClassName()));
+                Log.i("MyApp", Objects.requireNonNull(Objects.requireNonNull(binding.adsView.getResponseInfo()).getMediationAdapterClassName()));
             }
 
             @Override
@@ -302,6 +295,8 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
         binding.sunButton.setOnClickListener(v -> {
 
             clearAlpha();
+
+
             binding.sunButton.setAlpha(1f);
 
             closeOpenFragment();
@@ -333,7 +328,6 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
         showGDPR();
 
     }
-
 
     public void startTimer(int hours, int minutes) {
         binding.bottomText.setVisibility(View.VISIBLE);
@@ -641,7 +635,6 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
         SharedPreferences sharedPref = this.getSharedPreferences("MYPREFS", 0);
         current_item = sharedPref.getInt("CURRENT_ITEM", 0);
         binding.pager.setCurrentItem(current_item);
-        Log.i("SETTINGS", "current_item" + current_item);
     }
 
     public void closeApp(int mySeconds) {
@@ -682,7 +675,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
             binding.bottomText.setVisibility(View.INVISIBLE);
             flow.setVisibility(View.INVISIBLE);
             binding.adsView.setVisibility(View.INVISIBLE);
-            mAdView.setVisibility(View.GONE);
+            binding.adsView.setVisibility(View.GONE);
             indicator.setVisibility(View.INVISIBLE);
 
             binding.lockButton.setImageResource(R.drawable.bt_closed);
@@ -705,7 +698,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
             show = true;
 
             if (getNoAdsCount() < 1) {
-                mAdView.setVisibility(View.VISIBLE);
+                binding.adsView.setVisibility(View.VISIBLE);
                 showInterstitial();
             }
 
@@ -741,8 +734,6 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
         }
     }
 
-
-
     private void showButtons() {
         if (checkMenu) {
             binding.lockButton.setVisibility(View.VISIBLE);
@@ -754,8 +745,6 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
             binding.bottomText.setVisibility(View.VISIBLE);
         }
     }
-
-
 
     public void loadInterstitial() {
 
@@ -897,7 +886,6 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
 
 
     }
-
 
     private void showAlertDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this, R.style.MyDialogTheme);

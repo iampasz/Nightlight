@@ -1,18 +1,21 @@
 buildscript {
 
     repositories {
-       // maven { url 'https://artifacts.applovin.com/android' }
+        mavenCentral()
+        google()
 
-        maven {
-            name "Chartboost Mediation’s maven repo"
-            url "https://cboost.jfrog.io/artifactory/chartboost-mediation"
-        }
+       // maven { url 'https://artifacts.applovin.com/android' }
+//
+//        maven {
+//            name "Chartboost Mediation’s maven repo"
+//            url "https://cboost.jfrog.io/artifactory/chartboost-mediation"
+//        }
 
     }
 
     dependencies {
         classpath 'com.google.gms:google-services:4.4.0'
-        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'com.android.tools.build:gradle:8.1.4'
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
         //classpath "com.applovin.quality:AppLovinQualityServiceGradlePlugin:"
 

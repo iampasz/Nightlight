@@ -50,7 +50,7 @@ public class NoAds extends Fragment {
                     public void isShown(boolean shown) {
                         if (shown) {
 
-                            ((MainActivity)getActivity()).mAdView.setVisibility(View.GONE);
+                            //((MainActivity)getActivity()).adsView.setVisibility(View.GONE);
                             noAdsCount = ((MainActivity)getActivity()).getNoAdsCount();
                             no_ads_counter.setText(getResources().getString(R.string.ads_counter)+ noAdsCount);
                         }else{
