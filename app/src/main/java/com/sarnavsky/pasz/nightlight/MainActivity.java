@@ -25,14 +25,11 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.helper.widget.Flow;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -88,6 +85,8 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
     Flow flow;
     CircleIndicator3 indicator;
     CountDownTimer offMessage;
+    CountDownTimer globalTimer;
+    CountDownTimer cdt;
 
     public AdView mAdView;
 
@@ -179,7 +178,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
             }
         });
 
-        binding.lockScrean.setOnTouchListener((v, event) -> {
+        binding.lockScreen.setOnTouchListener((v, event) -> {
             //clearAlpha();
             showButtons();
             startGlobalTimer();
@@ -256,7 +255,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
         mAdapter.registerAdapterDataObserver(indicator.getAdapterDataObserver());
 
 
-        binding.adView.setOnClickListener(view -> showAlertDialog());
+        binding.adsView.setOnClickListener(view -> showAlertDialog());
 
 
         binding.starsButton.setOnClickListener(v -> {
@@ -566,10 +565,10 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
                 break;
 
             case 5:
-                fon1.setImageResource(R.drawable.bg_dark_blue);
-                fon2.setImageResource(R.drawable.stars_dark_blue);
-                fon3.setImageResource(R.drawable.lg_dark_blue);
-                fonLayout.setBackgroundResource(R.color.darkblue);
+                binding.fon1.setImageResource(R.drawable.bg_dark_blue);
+                binding.fon2.setImageResource(R.drawable.stars_dark_blue);
+                binding.fon3.setImageResource(R.drawable.lg_dark_blue);
+                binding.backgrounds.setBackgroundResource(R.color.darkblue);
                 showToast(getString(R.string.bgcolor_blue));
                 fonStatus = 0;
                 break;
@@ -580,7 +579,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
     protected void onDestroy() {
         super.onDestroy();
 
-        lullabyButton.setAlpha(0.25f);
+        binding.lullabyButton.setAlpha(0.25f);
         mediaPlayer.reset();
         saveSettings();
         lullabyStatus = 0;
@@ -593,7 +592,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
         //    mAdView.pause();
 
         super.onPause();
-        lullabyButton.setAlpha(0.25f);
+        binding.lullabyButton.setAlpha(0.25f);
 
     }
 
@@ -615,8 +614,8 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
     public void saveSettings() {
         SharedPreferences sharedPref = this.getSharedPreferences("MYPREFS", 0);
         SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt("CURRENT_ITEM", mPager.getCurrentItem());
-        Log.i("SETTINGS", "saveSettings" + mPager.getCurrentItem());
+        editor.putInt("CURRENT_ITEM", binding.pager.getCurrentItem());
+        Log.i("SETTINGS", "saveSettings" + binding.pager.getCurrentItem());
         editor.apply();
     }
 
@@ -641,7 +640,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
     public void getSettings() {
         SharedPreferences sharedPref = this.getSharedPreferences("MYPREFS", 0);
         current_item = sharedPref.getInt("CURRENT_ITEM", 0);
-        mPager.setCurrentItem(current_item);
+        binding.pager.setCurrentItem(current_item);
         Log.i("SETTINGS", "current_item" + current_item);
     }
 
@@ -658,7 +657,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
                 @SuppressLint("DefaultLocale")
                 @Override
                 public void onTick(long l) {
-                    bottom_text.setText(String.format("%02d:%02d:%02d", (l / 1000) / 3600, ((l / 1000) % 3600) / 60, (l / 1000) % 60));
+                    binding.bottomText.setText(String.format("%02d:%02d:%02d", (l / 1000) / 3600, ((l / 1000) % 3600) / 60, (l / 1000) % 60));
                 }
 
                 @Override
@@ -669,7 +668,7 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
             };
             cdt.start();
         } else {
-            bottom_text.setVisibility(View.INVISIBLE);
+            binding.bottomText.setVisibility(View.INVISIBLE);
         }
     }
 
@@ -678,30 +677,30 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
         closeOpenFragment();
 
         if (checkMenu) {
-            lockScreen.setClickable(true);
+            binding.lockScreen.setClickable(true);
 
-            bottom_text.setVisibility(View.INVISIBLE);
+            binding.bottomText.setVisibility(View.INVISIBLE);
             flow.setVisibility(View.INVISIBLE);
-            adsView.setVisibility(View.INVISIBLE);
+            binding.adsView.setVisibility(View.INVISIBLE);
             mAdView.setVisibility(View.GONE);
             indicator.setVisibility(View.INVISIBLE);
 
-            lockButton.setImageResource(R.drawable.bt_closed);
+            binding.lockButton.setImageResource(R.drawable.bt_closed);
 
 
-            lockScreen.setClickable(true);
+            binding.lockScreen.setClickable(true);
             checkMenu = false;
             show = false;
         } else {
 
-            lockScreen.setClickable(false);
-            bottom_text.setVisibility(View.VISIBLE);
+            binding.lockScreen.setClickable(false);
+            binding.bottomText.setVisibility(View.VISIBLE);
             flow.setVisibility(View.VISIBLE);
-            adsView.setVisibility(View.VISIBLE);
+            binding.adsView.setVisibility(View.VISIBLE);
             indicator.setVisibility(View.VISIBLE);
 
-            lockButton.setImageResource(R.drawable.bt_unlock);
-            lockScreen.setClickable(false);
+            binding.lockButton.setImageResource(R.drawable.bt_unlock);
+            binding.lockScreen.setClickable(false);
             checkMenu = true;
             show = true;
 
@@ -731,8 +730,8 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
                     // clearAlpha();
 
                     if (!checkMenu) {
-                        lockButton.setVisibility(View.INVISIBLE);
-                        bottom_text.setVisibility(View.INVISIBLE);
+                        binding.lockButton.setVisibility(View.INVISIBLE);
+                        binding.bottomText.setVisibility(View.INVISIBLE);
                     }
 
 
@@ -746,13 +745,13 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
 
     private void showButtons() {
         if (checkMenu) {
-            lockButton.setVisibility(View.VISIBLE);
-            bottom_text.setVisibility(View.VISIBLE);
+            binding.lockButton.setVisibility(View.VISIBLE);
+            binding.bottomText.setVisibility(View.VISIBLE);
             flow.setVisibility(View.VISIBLE);
-            adsView.setVisibility(View.VISIBLE);
+            binding.adsView.setVisibility(View.VISIBLE);
         } else {
-            lockButton.setVisibility(View.VISIBLE);
-            bottom_text.setVisibility(View.VISIBLE);
+            binding.lockButton.setVisibility(View.VISIBLE);
+            binding.bottomText.setVisibility(View.VISIBLE);
         }
     }
 
@@ -818,14 +817,14 @@ public class MainActivity extends AppCompatActivity implements Brights.MyInterfa
     }
 
     public void clearAlpha() {
-        starsButton.setAlpha(0.25f);
-        timerButton.setAlpha(0.25f);
-        lullabyButton.setAlpha(0.25f);
-        bgColorButton.setAlpha(0.25f);
-        sunButton.setAlpha(0.25f);
-        autoButton.setAlpha(0.25f);
-        adsView.setAlpha(0.25f);
-        lockButton.setAlpha(0.25f);
+        binding.starsButton.setAlpha(0.25f);
+        binding.timerButton.setAlpha(0.25f);
+        binding.lullabyButton.setAlpha(0.25f);
+        binding.backgrounds.setAlpha(0.25f);
+        binding.sunButton.setAlpha(0.25f);
+        binding.autoButton.setAlpha(0.25f);
+        binding.adsView.setAlpha(0.25f);
+        binding.lockButton.setAlpha(0.25f);
     }
 
     public void loadRewardedAd() {

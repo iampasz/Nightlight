@@ -42,7 +42,7 @@
     </FrameLayout>
 
     <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+        android:id="@+id/ads_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -87,7 +87,7 @@
         ads:constraint_referenced_ids="stars_button,timerButton,lullaby_button,bgcolor,sunButton,autoButton"
         ads:layout_constraintEnd_toEndOf="parent"
         ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toBottomOf="@+id/adView" />
+        ads:layout_constraintTop_toBottomOf="@+id/ads_view" />
 
     <ImageView
         android:id="@+id/stars_button"
@@ -137,7 +137,7 @@
         android:src="@drawable/bt_automatic" />
 
     <FrameLayout
-        android:id="@+id/lockScrean"
+        android:id="@+id/lock_screen"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:clickable="false"
