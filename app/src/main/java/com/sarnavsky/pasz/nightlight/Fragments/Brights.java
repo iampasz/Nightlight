@@ -2,12 +2,10 @@ package com.sarnavsky.pasz.nightlight.Fragments;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,18 +13,14 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
-import com.sarnavsky.pasz.nightlight.Interfaces.DoThis;
 import com.sarnavsky.pasz.nightlight.MainActivity;
 import com.sarnavsky.pasz.nightlight.R;
-
-import java.io.Serializable;
 
 public class Brights extends Fragment {
 
@@ -39,12 +33,14 @@ public class Brights extends Fragment {
    ImageView bear_image;
    ImageView sun_image;
 
+
+
    int BRIGHTS = 0;
 
    MyInterface mCallback;
 
    public interface MyInterface {
-      public void onTrigger();
+       void onTrigger();
    }
 
    @Nullable

@@ -63,5 +63,10 @@
     <string name="screan_bright_is">Bildschirmhelligkeit ist: \u0020  </string>
     <string name="dont_load">Anzeige wurde nicht geladen</string>
 
+    <string name="button_question">Download new version</string>
+    <string name="nl2_descriptions">Use new version. Download from Google Play?</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
 </resources>

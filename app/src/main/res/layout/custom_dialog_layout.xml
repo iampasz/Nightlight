@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10"
+    android:background="@drawable/white_shape_menu"
+    android:orientation="vertical">
+
+    <!-- Заголовок діалогу -->
+    <TextView
+        android:id="@+id/alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_20"
+        android:paddingBottom="@dimen/padding_10"
+        android:text="@string/button_question"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/darkBlueText"
+        android:textSize="@dimen/text_size_25"
+        android:textStyle="bold" />
+
+    <!-- Текст повідомлення -->
+
+    <!-- Кнопки -->
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20"
+        android:text="@string/nl2_descriptions"
+        android:textColor="@color/darkBlueText"
+        android:textSize="@dimen/text_size_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/padding_20"
+        android:paddingEnd="@dimen/padding_20"
+        android:paddingBottom="@dimen/padding_20">
+
+        <Button
+            android:id="@+id/positive_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:padding="@dimen/padding_10"
+            android:text="@string/yes"
+            android:textColor="@color/whiteText"
+            android:textSize="@dimen/text_size_25" />
+
+        <Button
+            android:id="@+id/negative_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:padding="8dp"
+            android:text="@string/no"
+            android:textColor="@color/whiteText"
+            android:textSize="@dimen/text_size_25" />
+    </LinearLayout>
+</LinearLayout>

@@ -167,8 +167,8 @@
             android:layout_alignParentBottom="false"
             android:layout_marginLeft="10dp"
             android:layout_marginBottom="10dp"
-            android:alpha="0.25"
-            android:src="@drawable/bt_ads"
+            android:alpha="1"
+            android:src="@drawable/ic_launcher_round"
             android:visibility="visible" />
 
         <TextView

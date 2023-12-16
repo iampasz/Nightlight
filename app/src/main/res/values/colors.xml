@@ -10,4 +10,7 @@
     <color name="black">#000000</color>
     <color name="darkblue">#010b48</color>
 
+    <color name="darkBlueText">#010b48</color>
+    <color name="whiteText">#FFFFFF</color>
+
 </resources>

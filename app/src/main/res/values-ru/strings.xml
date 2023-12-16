@@ -65,4 +65,10 @@
 
     <string name="dont_load">Реклама не загрузилась</string>
 
+    <string name="button_question">Загрузите новую версию</string>
+    <string name="nl2_descriptions">Используйте новую версию приложения. Загрузить из Google Play маркета?</string>
+
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
 </resources>

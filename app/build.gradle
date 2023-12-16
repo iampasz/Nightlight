@@ -14,8 +14,8 @@ android {
         minSdk 21
         targetSdk 34
 
-        versionCode 40
-        versionName "4.8"
+        versionCode 42
+        versionName "5.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -31,76 +31,63 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+    viewBinding {
+        enabled = true
+    }
+
+
 }
 
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
-    implementation 'com.google.firebase:firebase-analytics-ktx:21.3.0'
-    implementation 'com.google.firebase:firebase-crashlytics:18.4.3'
-    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation 'com.google.android.material:material:1.11.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    //noinspection GradleCompatible
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-
-//    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
-
-   // implementation 'com.jakewharton:butterknife:10.2.3'
-    implementation 'androidx.recyclerview:recyclerview:1.3.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
-  //  annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'com.google.android.ump:user-messaging-platform:2.1.0'
 
-    implementation 'fr.nicolaspomepuy:discreetapprate:2.0.4@aar'
+    //Firebase
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.5.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.6.0'
+    implementation 'com.google.firebase:firebase-analytics:21.5.0'
 
-  //  implementation 'com.github.Haegon:EasyNativeDialog-for-Android:0.3.0'
-
-    implementation 'com.google.android.gms:play-services-ads:22.4.0'
-
+    //ADS mediation
     implementation  'com.google.ads.mediation:adcolony:4.8.0.2'
-   // implementation  'com.google.ads.mediation:applovin:11.11.3.0'
-
     implementation  'com.google.ads.mediation:fyber:8.2.4.0'
     implementation  'com.google.ads.mediation:imobile:2.3.1.1'
-    implementation  'com.google.ads.mediation:inmobi:10.5.8.0'
-
-    implementation  'com.google.ads.mediation:vungle:6.12.1.1'
-   // implementation  'com.google.ads.mediation:maio:1.1.16.2'
+    implementation  'com.google.ads.mediation:inmobi:10.6.2.0'
+    implementation  'com.google.ads.mediation:vungle:7.1.0.0'
     implementation  'com.google.ads.mediation:facebook:6.16.0.0'
-    implementation  'com.google.ads.mediation:mintegral:16.5.21.0'
-    implementation  'com.google.ads.mediation:mytarget:5.18.0.0'
-
-    implementation  'com.google.ads.mediation:pangle:5.4.1.1.0'
-    implementation  'com.google.ads.mediation:tapjoy:13.1.2.0'
-    //implementation  'com.unity3d.ads:unity-ads:4.8.0'
-    //implementation  'com.google.ads.mediation:unity:4.8.0.0'
-   // implementation  'com.google.ads.mediation:yahoo:1.4.1.1'
-
+    implementation  'com.google.ads.mediation:mintegral:16.5.51.0'
+    implementation  'com.google.ads.mediation:mytarget:5.19.0.0'
+    implementation  'com.google.ads.mediation:pangle:5.5.0.9.0'
+    implementation  'com.google.ads.mediation:tapjoy:13.2.1.0'
     implementation 'com.chartboost:chartboost-mediation-sdk:4.3.0'
-    //implementation  'com.google.ads.mediation:chartboost:9.4.1.0'
-    //implementation 'com.chartboost:chartboost-sdk:9.3.0'
-    //implementation  'com.google.ads.mediation:ironsource:7.3.1.1'
-   // implementation  'com.google.ads.mediation:nend:9.0.1.0'
 
+    //Kotlin
     implementation "org.greenrobot:eventbus:3.3.1"
-    //implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20"
-    //implementation "org.jetbrains.kotlin:kotlin-reflect:1.7.20"
-    //implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"
-    //implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.0"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:1.8.21"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1"
 
+    //Bottom ask rate in GooglePlayMarket
+    implementation 'fr.nicolaspomepuy:discreetapprate:2.0.4@aar'
 
-
-    implementation 'me.relex:circleindicator:2.1.6'
-
-   // apply plugin: 'applovin-quality-service'
-
-//    applovin {
-//        apiKey "PDS8IKXDLi0X41hBOOWTyVblcGm0TW_dZBzoSh44x1eJQp7dFgds8Rdtg4_JrtQCbJxzBptLnUWTxuV5iQhaDn"
-//    }
-
+    //Binding
+    implementation "androidx.databinding:databinding-runtime:8.2.0"
+    implementation 'com.android.tools.build:gradle:3.6.0-rc01'
 
 }

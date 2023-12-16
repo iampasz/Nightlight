@@ -5,8 +5,6 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.sarnavsky.pasz.nightlight.MainActivity;
-
 /**
  * Created by pasz on 04.12.2016.
  */

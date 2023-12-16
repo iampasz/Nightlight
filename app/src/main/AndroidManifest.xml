@@ -8,7 +8,7 @@
     <application
         android:name="com.sarnavsky.pasz.nightlight.App2"
         android:allowBackup="true"
-        android:icon="@drawable/logo"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:screenOrientation="portrait"
